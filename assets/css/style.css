@@ -1,0 +1,213 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .pattern-hero {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+} 
+
+.card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background-color: white;
+  margin: 1.5rem;
+  max-width: 450px;
+}
+
+.card .secction-1__img-container {
+  display: block;
+  min-height: 165px;
+  background-image: url("../images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mobile-pattern {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+.desktop-pattern {
+  position: fixed;
+  z-index: -1;
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .mobile-pattern {
+    display: none;
+  }
+
+  .desktop-pattern {
+    display: initial;
+  }
+  .card .secction-1__img-container {
+    min-height: 220px;
+  }
+}
+
+.card .secction-1__article {
+  text-align: center;
+}
+
+.card .secction-1__article h3 {
+  margin-top: 1.75rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-1__article h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.card .secction-1__article p {
+  font-size: .95rem;
+  margin: .75rem 2rem;
+  line-height: 1.6;
+  color: #7280a7;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-1__article p {
+    margin: 1rem 4.875rem;
+    font-size: 1rem;
+  }
+}
+
+.card .secction-2 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0 1.45rem;
+}
+
+.card .secction-2 .music {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f5f7ff;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-2 {
+    padding: 0 2rem;
+  }
+}
+
+.card .secction-2 .music .price-container .plan {
+  display: block;
+  font-size: 0.95rem;
+  color: #1f2f56;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-2 .music .price-container .plan {
+    font-size: 1.1rem;
+  }
+}
+
+.card .secction-2 .music .price-container .price {
+  display: block;
+  font-size: 0.9rem;
+  color: #7280a7;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-2 .music .price-container .price {
+    font-size: 1.1rem;
+  }
+}
+
+.card .secction-2 .music a {
+  display: inline-block;
+  margin-left: auto;
+  height: 100%;
+  color: #3829e0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .card .secction-2 .music a {
+    font-size: 0.9rem;
+  }
+}
+
+.card .secction-2 .music a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.card .secction-2 .btn1 {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  background-color: #3829e0;
+  border-radius: 0.6rem;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 900;
+  box-shadow: 0 1px 15px #3829e0;
+  transition: all .35s ease-in-out;
+}
+
+.card .secction-2 .btn1:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.card .secction-2 .btn2 {
+  padding: 1.35rem 4rem;
+  margin-bottom: .75rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #7280a7;
+  transition: all .35s ease-in-out;
+  cursor: pointer;
+}
+
+.card .secction-2 .btn2:hover {
+  color: #1f2f56;
+}
